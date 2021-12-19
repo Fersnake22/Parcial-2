@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <table border = 1>
+         <thead>
+            <td>Series Name</td>
+            <td>Series Code</td>
+            <td>Time</td>
+            <td>Time Code</td>
+            <td>Panam [PAM]</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["code"]}}</td>
+               <td>{{row["tiempo"]}}</td>
+               <td>{{row["tcode"]}}</td>
+               <td>{{row["porcentaje"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+            
+   </body>
+</html>
